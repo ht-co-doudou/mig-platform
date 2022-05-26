@@ -1,0 +1,42 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = false
+
+[*.py]
+indent_style = space
+indent_size = 4
+
+[*.go]
+indent_style = tab
+indent_size = 8
+
+[*.php]
+indent_style = space
+indent_size = 4
+
+[*.{htm,html,js,ts,tsx,css,sass,scss,less}]
+indent_style = space
+indent_size = 2
+
+[*.{json,json5,yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[{D,d}ockerfile]
+indent_style = space
+indent_size = 4
+
+[{M,m}akefile]
+indent_style = tab
+indent_size = 4
