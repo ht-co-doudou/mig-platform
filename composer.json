@@ -3,7 +3,7 @@
   "description": "Migration For Platform",
   "require": {
     "php": ">=7.3",
-    "cpw/enum-platform": "^2.26",
+    "doudou/enum-platform": "^0.1.0",
     "ramsey/uuid": "^3.8",
     "robmorgan/phinx": "^0.11.1",
     "vlucas/phpdotenv": "^3.5"
@@ -11,7 +11,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://gitlab+deploy-token-538923:JQCs4YjkBX8UMfFAPWye@gitlab.com/jetfueltw/live/enum-platform.git"
+      "url": "https://gitlab+deploy-token-1072144:9Jr9wd44zuwGpY1VRu5P@gitlab.com/ht-co/doudou/enum-platform.git"
     }
   ],
   "config": {

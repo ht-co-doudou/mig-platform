@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d98da1a5f894b3165911a1646147e4f9",
+    "content-hash": "ebf45a84651518c0bfe904e9e6c8a40e",
     "packages": [
         {
             "name": "cakephp/cache",
@@ -385,12 +385,12 @@
             "time": "2020-12-09T02:43:02+00:00"
         },
         {
-            "name": "cpw/enum-platform",
-            "version": "v2.26.1",
+            "name": "doudou/enum-platform",
+            "version": "v0.1",
             "source": {
                 "type": "git",
-                "url": "https://gitlab+deploy-token-538923:JQCs4YjkBX8UMfFAPWye@gitlab.com/jetfueltw/live/enum-platform.git",
-                "reference": "e340490c2916422b7830cd572e83e10eab657f21"
+                "url": "https://gitlab+deploy-token-1072144:9Jr9wd44zuwGpY1VRu5P@gitlab.com/ht-co/doudou/enum-platform.git",
+                "reference": "2276aa7abf6e7a1dc23e125286c9e74ebad92a94"
             },
             "require": {
                 "php": ">=7.2"
@@ -401,17 +401,17 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "CPW\\EnumPlatform\\": "src"
+                    "Doudou\\EnumPlatform\\": "src"
                 }
             },
             "authors": [
                 {
-                    "name": "iHank",
-                    "email": "ihank@jetfuel.com.tw"
+                    "name": "byushenlin",
+                    "email": "byushenlin@h-tech.co"
                 }
             ],
-            "description": "CPW enum for platform",
-            "time": "2021-09-23T08:58:54+00:00"
+            "description": "Doudou enum for platform",
+            "time": "2022-05-26T08:14:26+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -2066,5 +2066,5 @@
         "php": ">=7.3"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
