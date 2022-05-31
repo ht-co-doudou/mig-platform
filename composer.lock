@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ebf45a84651518c0bfe904e9e6c8a40e",
+    "content-hash": "44ada585d07e2d9103676b2a5efa13cd",
     "packages": [
         {
             "name": "cakephp/cache",
@@ -386,11 +386,11 @@
         },
         {
             "name": "doudou/enum-platform",
-            "version": "v0.1",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://gitlab+deploy-token-1072144:9Jr9wd44zuwGpY1VRu5P@gitlab.com/ht-co/doudou/enum-platform.git",
-                "reference": "2276aa7abf6e7a1dc23e125286c9e74ebad92a94"
+                "reference": "5ac7b8c3f4b7c01e641a9dd337e3eaff34837fc1"
             },
             "require": {
                 "php": ">=7.2"
@@ -411,7 +411,7 @@
                 }
             ],
             "description": "Doudou enum for platform",
-            "time": "2022-05-26T08:14:26+00:00"
+            "time": "2022-05-31T01:58:50+00:00"
         },
         {
             "name": "paragonie/random_compat",
