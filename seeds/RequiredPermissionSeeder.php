@@ -35,6 +35,8 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'member.export', 'name' => '会员帐号-汇出', 'allow' => 15],
             ['code' => 'member.recycle', 'name' => '会员帐号-回收站', 'allow' => 15],
             ['code' => 'member.recycle_operate', 'name' => '会员帐号-回收站-还原', 'allow' => 11],
+            ['code' => 'site.view', 'name' => '站点设置', 'allow' => 15],
+            ['code' => 'site.update', 'name' => '站点设置-编辑', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
