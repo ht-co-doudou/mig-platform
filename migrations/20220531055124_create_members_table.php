@@ -20,7 +20,7 @@ class CreateMembersTable extends AbstractMigration
             ->addColumn('parent_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'null' => true, 'comment' => 'mapping members.id'])
             ->addColumn('site_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping sites.id'])
             ->addColumn('uid', 'char', ['limit' => 32, 'comment' => 'UUID'])
-            ->addColumn('name', 'string', ['limit' => 30, 'comment' => '真實姓名'])
+            ->addColumn('name', 'string', ['limit' => 30, 'null' => true, 'comment' => '真實姓名'])
             ->addColumn('username', 'string', ['limit' => 30, 'comment' => '帳號'])
             ->addColumn('mobile', 'string', ['null' => true, 'limit' => 30, 'comment' => '手機號碼'])
             ->addColumn('nickname', 'string', ['limit' => 30, 'comment' => '暱稱'])
