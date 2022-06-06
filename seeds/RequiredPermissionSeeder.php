@@ -37,6 +37,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'member.recycle_operate', 'name' => '会员帐号-回收站-还原', 'allow' => 11],
             ['code' => 'site.view', 'name' => '站点设置', 'allow' => 15],
             ['code' => 'site.update', 'name' => '站点设置-编辑', 'allow' => 15],
+            ['code' => 'video_tag.view', 'name' => '标签管理', 'allow' => 15],
+            ['code' => 'video_tag.create', 'name' => '标签管理-新增', 'allow' => 15],
+            ['code' => 'video_tag.update', 'name' => '标签管理-编辑', 'allow' => 15],
+            ['code' => 'video_tag.delete', 'name' => '标签管理-删除', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
