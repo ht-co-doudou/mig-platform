@@ -18,7 +18,6 @@ class CreateTagsTable extends AbstractMigration
 
         $table->addColumn('id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'identity' => true])
             ->addColumn('site_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping sites.id'])
-            ->addColumn('group_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'null' => true, 'signed' => false, 'comment' => 'mapping tag_groups.id'])
             ->addColumn('image', 'string', ['limit' => 255, 'null' => true, 'comment' => '圖片', 'after' => 'name'])
             ->addColumn('name', 'string', ['limit' => 30, 'comment' => '名稱'])
             ->addColumn('name_en', 'string', ['limit' => 30, 'comment' => '英文名稱'])
@@ -29,7 +28,6 @@ class CreateTagsTable extends AbstractMigration
             ->save();
 
         $table->addForeignKey('site_id', 'sites', 'id', ['constraint' => "fk_{$this->tableName}_site_id"])
-            ->addForeignKey('group_id', 'tag_groups', 'id', ['constraint' => "fk_{$this->tableName}_group_id"])
             ->save();
     }
 
