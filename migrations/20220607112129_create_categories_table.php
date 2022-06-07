@@ -3,9 +3,9 @@
 use Phinx\Db\Adapter\MysqlAdapter;
 use Phinx\Migration\AbstractMigration;
 
-class CreateTagsTable extends AbstractMigration
+class CreateCategoriesTable extends AbstractMigration
 {
-    private $tableName = 'tags';
+    private $tableName = 'categories';
 
     public function up()
     {
@@ -13,7 +13,7 @@ class CreateTagsTable extends AbstractMigration
             'id' => false,
             'primary_key' => 'id',
             'collation' => 'utf8mb4_unicode_ci',
-            'comment' => '標籤',
+            'comment' => '分類',
         ]);
 
         $table->addColumn('id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'identity' => true])
@@ -22,7 +22,7 @@ class CreateTagsTable extends AbstractMigration
             ->addColumn('name', 'string', ['limit' => 30, 'comment' => '名稱'])
             ->addColumn('name_en', 'string', ['limit' => 30, 'comment' => '英文名稱'])
             ->addColumn('order', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'default' => 0, 'comment' => '排序'])
-            ->addColumn('status', 'integer', ['limit' => MysqlAdapter::INT_TINY, 'signed' => false, 'comment' => '狀態 Tag/Status'])
+            ->addColumn('status', 'integer', ['limit' => MysqlAdapter::INT_TINY, 'signed' => false, 'comment' => '狀態 Category/Status'])
             ->addColumn('create_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'comment' => '建立時間'])
             ->addColumn('update_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'update' => 'CURRENT_TIMESTAMP', 'comment' => '更新時間'])
             ->save();
