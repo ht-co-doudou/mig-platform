@@ -4,7 +4,7 @@ Migration For `platform` Database
 
 # Installation
 
-`compposer install` and `cp .env.example .env`
+`composer install` and `cp .env.example .env`
 
 # Usage
 
