@@ -18,7 +18,7 @@ class CreateSiteActorsTable extends AbstractMigration
 
         $table->addColumn('actor_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => '片庫演員id'])
             ->addColumn('site_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping sites.id'])
-            ->addColumn('avatar', 'string', ['limit' => 255, 'comment' => '頭像'])
+            ->addColumn('avatar', 'string', ['limit' => 255, 'null' => true, 'comment' => '頭像'])
             ->addColumn('hot', 'boolean', ['default' => false, 'comment' => '是否為人氣演員'])
             ->addColumn('status', 'integer', ['limit' => MysqlAdapter::INT_TINY, 'signed' => false, 'comment' => '狀態 Actor/Status'])
             ->addColumn('create_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'comment' => '建立時間'])
