@@ -49,6 +49,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'actor.create', 'name' => '演员管理-新增', 'allow' => 15],
             ['code' => 'actor.update', 'name' => '演员管理-编辑', 'allow' => 15],
             ['code' => 'actor.delete', 'name' => '演员管理-删除', 'allow' => 15],
+            ['code' => 'site_category.view', 'name' => '分类供影管理', 'allow' => 1],
+            ['code' => 'site_category.create', 'name' => '分类供影管理-新增', 'allow' => 1],
+            ['code' => 'site_category.update', 'name' => '分类供影管理-编辑', 'allow' => 1],
+            ['code' => 'site_category.delete', 'name' => '分类供影管理-删除', 'allow' => 1],
         ];
 
         $this->table('permissions')->insert($data)->save();
