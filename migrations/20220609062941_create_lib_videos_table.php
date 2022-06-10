@@ -3,9 +3,9 @@
 use Phinx\Db\Adapter\MysqlAdapter;
 use Phinx\Migration\AbstractMigration;
 
-class CreateVideosTable extends AbstractMigration
+class CreateLibVideosTable extends AbstractMigration
 {
-    const TABLE_NAME = 'videos';
+    const TABLE_NAME = 'lib_videos';
 
     public function up()
     {

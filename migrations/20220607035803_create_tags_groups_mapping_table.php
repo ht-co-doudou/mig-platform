@@ -13,7 +13,7 @@ class CreateTagsGroupsMappingTable extends AbstractMigration
             'id' => false,
             'primary_key' => ['group_id', 'tag_id'],
             'collation' => 'utf8mb4_unicode_ci',
-            'comment' => '標籤所屬群組',
+            'comment' => '站台標籤所屬群組',
         ]);
 
         $table->addColumn('group_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping tag_groups.id'])

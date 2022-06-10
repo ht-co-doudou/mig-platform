@@ -3,9 +3,9 @@
 use Phinx\Db\Adapter\MysqlAdapter;
 use Phinx\Migration\AbstractMigration;
 
-class CreateActorsTable extends AbstractMigration
+class CreateLibActorsTable extends AbstractMigration
 {
-    const TABLE_NAME = 'actors';
+    const TABLE_NAME = 'lib_actors';
 
     public function up()
     {

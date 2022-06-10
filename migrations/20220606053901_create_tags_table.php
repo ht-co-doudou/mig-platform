@@ -13,7 +13,7 @@ class CreateTagsTable extends AbstractMigration
             'id' => false,
             'primary_key' => 'id',
             'collation' => 'utf8mb4_unicode_ci',
-            'comment' => '標籤',
+            'comment' => '站台標籤',
         ]);
 
         $table->addColumn('id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'identity' => true])

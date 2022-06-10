@@ -3,9 +3,9 @@
 use Phinx\Db\Adapter\MysqlAdapter;
 use Phinx\Migration\AbstractMigration;
 
-class CreateLibraryCategoriesTable extends AbstractMigration
+class CreateLibCategoriesTable extends AbstractMigration
 {
-    const TABLE_NAME = 'library_categories';
+    const TABLE_NAME = 'lib_categories';
 
     public function up()
     {
@@ -13,12 +13,12 @@ class CreateLibraryCategoriesTable extends AbstractMigration
             'id' => false,
             'primary_key' => 'id',
             'collation' => 'utf8mb4_unicode_ci',
-            'comment' => '片庫類別',
+            'comment' => '片庫分類',
         ]);
 
         $table->addColumn('id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'identity' => true])
-            ->addColumn('name', 'string', ['limit' => 30, 'comment' => '類別名稱'])
-            ->addColumn('name_en', 'string', ['limit' => 50, 'null' => true, 'comment' => '類別英文名稱'])
+            ->addColumn('name', 'string', ['limit' => 30, 'comment' => '分類名稱'])
+            ->addColumn('name_en', 'string', ['limit' => 50, 'null' => true, 'comment' => '分類英文名稱'])
             ->addColumn('create_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'comment' => '建立時間'])
             ->addColumn('update_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'update' => 'CURRENT_TIMESTAMP', 'comment' => '更新時間'])
             ->save();

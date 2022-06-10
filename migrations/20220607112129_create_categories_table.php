@@ -13,7 +13,7 @@ class CreateCategoriesTable extends AbstractMigration
             'id' => false,
             'primary_key' => 'id',
             'collation' => 'utf8mb4_unicode_ci',
-            'comment' => '分類',
+            'comment' => '站台分類',
         ]);
 
         $table->addColumn('id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'identity' => true])
