@@ -22,6 +22,7 @@ class CreateSiteVideosTable extends AbstractMigration
             ->addColumn('category_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping categories.id'])
             ->addColumn('display', 'integer', ['limit' => MysqlAdapter::INT_TINY, 'signed' => false, 'comment' => '是否顯示'])
             ->addColumn('status', 'integer', ['limit' => MysqlAdapter::INT_TINY, 'signed' => false, 'comment' => '狀態 Video/Status'])
+            ->addColumn('hot', 'boolean', ['default' => false, 'comment' => '是否為熱門影片'])
             ->addColumn('title', 'string', ['limit' => 255, 'comment' => '標題'])
             ->addColumn('title_en', 'string', ['limit' => 255, 'null' => true, 'comment' => '英文標題'])
             ->addColumn('cover', 'string', ['limit' => 255, 'null' => true, 'comment' => '封面'])
