@@ -22,6 +22,7 @@ class CreateCampaignsTable extends AbstractMigration
             ->addColumn('title_en', 'string', ['limit' => 255, 'comment' => '英文標題'])
             ->addColumn('image', 'string', ['limit' => 255, 'comment' => '圖片'])
             ->addColumn('content', 'text', ['comment' => '內容'])
+            ->addColumn('content_en', 'text', ['comment' => '英文內容'])
             ->addColumn('order', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'default' => 0, 'comment' => '排序'])
             ->addColumn('publish', 'boolean', ['comment' => '是否發布'])
             ->addColumn('start_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'comment' => '活動開始時間'])
