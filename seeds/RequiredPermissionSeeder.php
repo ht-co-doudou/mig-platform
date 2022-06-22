@@ -69,6 +69,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'banner.create', 'name' => '廣告管理-新增', 'allow' => 15],
             ['code' => 'banner.update', 'name' => '廣告管理-编辑', 'allow' => 15],
             ['code' => 'banner.delete', 'name' => '廣告管理-删除', 'allow' => 15],
+            ['code' => 'banner_content.view', 'name' => '廣告內容管理', 'allow' => 15],
+            ['code' => 'banner_content.create', 'name' => '廣告內容管理-新增', 'allow' => 15],
+            ['code' => 'banner_content.update', 'name' => '廣告內容管理-编辑', 'allow' => 15],
+            ['code' => 'banner_content.delete', 'name' => '廣告內容管理-删除', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
