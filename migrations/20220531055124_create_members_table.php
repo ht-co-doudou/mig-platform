@@ -28,7 +28,7 @@ class CreateMembersTable extends AbstractMigration
             ->addColumn('withdraw_password', 'string', ['limit' => 60, 'null' => true, 'comment' => '出款密碼'])
             ->addColumn('balance', 'decimal', ['precision' => 16, 'scale' => 4, 'default' => 0, 'comment' => '餘額'])
             ->addColumn('lien', 'decimal', ['precision' => 16, 'scale' => 4, 'default' => 0, 'comment' => '圈存金額'])
-            ->addColumn('token_coin', 'decimal', ['precision' => 16, 'scale' => 4, 'default' => 0, 'comment' => '豆豆幣餘額'])
+            ->addColumn('diamond', 'decimal', ['precision' => 16, 'scale' => 4, 'default' => 0, 'comment' => '豆豆幣餘額'])
             ->addColumn('watch_expire_at', 'timestamp', ['null' => true, 'comment' => '觀影到期時間'])
             ->addColumn('first_deposit_amount', 'decimal', ['precision' => 16, 'scale' => 4, 'signed' => false, 'default' => 0, 'comment' => '首存金額'])
             ->addColumn('first_deposit_at', 'timestamp', ['null' => true, 'comment' => '首存時間'])
