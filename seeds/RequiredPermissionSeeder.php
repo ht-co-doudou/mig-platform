@@ -77,6 +77,7 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'static_page.create', 'name' => '文案管理-新增', 'allow' => 15],
             ['code' => 'static_page.update', 'name' => '文案管理-编辑', 'allow' => 15],
             ['code' => 'static_page.delete', 'name' => '文案管理-删除', 'allow' => 15],
+            ['code' => 'csv_export.view', 'name' => '下载中心', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
