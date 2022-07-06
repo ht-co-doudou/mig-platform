@@ -82,6 +82,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'message.create', 'name' => '站内信-新增', 'allow' => 15],
             ['code' => 'message.update', 'name' => '站内信-编辑', 'allow' => 15],
             ['code' => 'message.delete', 'name' => '站内信-删除', 'allow' => 15],
+            ['code' => 'promotion.view', 'name' => '兑换码管理', 'allow' => 15],
+            ['code' => 'promotion.create', 'name' => '兑换码管理-新增', 'allow' => 15],
+            ['code' => 'promotion.update', 'name' => '兑换码管理-编辑', 'allow' => 15],
+            ['code' => 'promotion.delete', 'name' => '兑换码管理-删除', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
