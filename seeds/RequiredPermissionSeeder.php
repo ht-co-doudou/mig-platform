@@ -99,6 +99,8 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'sms_vendor.create', 'name' => '简讯商管理-新增', 'allow' => 15],
             ['code' => 'sms_vendor.update', 'name' => '简讯商管理-编辑', 'allow' => 15],
             ['code' => 'sms_vendor.delete', 'name' => '简讯商管理-删除', 'allow' => 15],
+            ['code' => 'video_order.view', 'name' => '购片纪录', 'allow' => 15],
+            ['code' => 'video_order.export', 'name' => '购片纪录-汇出', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
