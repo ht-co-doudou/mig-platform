@@ -95,6 +95,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'official_site.create', 'name' => '官方网站管理-新增', 'allow' => 15],
             ['code' => 'official_site.update', 'name' => '官方网站管理-编辑', 'allow' => 15],
             ['code' => 'official_site.delete', 'name' => '官方网站管理-删除', 'allow' => 15],
+            ['code' => 'sms_vendor.view', 'name' => '简讯商管理', 'allow' => 15],
+            ['code' => 'sms_vendor.create', 'name' => '简讯商管理-新增', 'allow' => 15],
+            ['code' => 'sms_vendor.update', 'name' => '简讯商管理-编辑', 'allow' => 15],
+            ['code' => 'sms_vendor.delete', 'name' => '简讯商管理-删除', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
