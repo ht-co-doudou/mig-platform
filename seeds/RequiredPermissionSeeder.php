@@ -102,6 +102,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'video_order.view', 'name' => '购片纪录', 'allow' => 15],
             ['code' => 'video_order.export', 'name' => '购片纪录-汇出', 'allow' => 15],
             ['code' => 'promotion_order.view', 'name' => '兑换纪录', 'allow' => 15],
+            ['code' => 'feature_config.view', 'name' => '功能开关设定', 'allow' => 15],
+            ['code' => 'feature_config.create', 'name' => '功能开关设定-新增', 'allow' => 15],
+            ['code' => 'feature_config.update', 'name' => '功能开关设定-编辑', 'allow' => 15],
+            ['code' => 'feature_config.delete', 'name' => '功能开关设定-删除', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
