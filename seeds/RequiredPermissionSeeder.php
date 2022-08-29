@@ -106,6 +106,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'feature_config.create', 'name' => '功能开关设定-新增', 'allow' => 15],
             ['code' => 'feature_config.update', 'name' => '功能开关设定-编辑', 'allow' => 15],
             ['code' => 'feature_config.delete', 'name' => '功能开关设定-删除', 'allow' => 15],
+            ['code' => 'Video_plan.view', 'name' => '观影方案管理', 'allow' => 15],
+            ['code' => 'video_plan.create', 'name' => '观影方案管理-新增', 'allow' => 15],
+            ['code' => 'video_plan.update', 'name' => '观影方案管理-编辑', 'allow' => 15],
+            ['code' => 'video_plan.delete', 'name' => '观影方案管理-删除', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
