@@ -21,7 +21,7 @@ class CreateVideoPlansTable extends AbstractMigration
             ->addColumn('name', 'string', ['limit' => 50, 'comment' => '名稱'])
             ->addColumn('name_en', 'string', ['limit' => 50, 'null' => true, 'comment' => '英文名稱'])
             ->addColumn('describe', 'string', ['limit' => 50, 'comment' => '優惠說明'])
-            ->addColumn('describe_en', 'string', ['limit' => 50, 'comment' => '英文優惠說明'])
+            ->addColumn('describe_en', 'string', ['limit' => 50, 'null' => true, 'comment' => '英文優惠說明'])
             ->addColumn('days', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => '觀影天數'])
             ->addColumn('token_coin_price', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => '豆豆幣價格'])
             ->addColumn('cash_price', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => '金幣價格'])
