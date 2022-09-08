@@ -111,6 +111,14 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'video_plan.update', 'name' => '观影方案管理-编辑', 'allow' => 15],
             ['code' => 'video_plan.delete', 'name' => '观影方案管理-删除', 'allow' => 15],
             ['code' => 'video_plan_order.view', 'name' => '购买观影方案纪录', 'allow' => 15],
+            ['code' => 'fourth_party.view', 'name' => '线上支付商户', 'allow' => 15],
+            ['code' => 'fourth_party.create', 'name' => '线上支付商户-新增', 'allow' => 15],
+            ['code' => 'fourth_party.update', 'name' => '线上支付商户-编辑', 'allow' => 15],
+            ['code' => 'fourth_party.delete', 'name' => '线上支付商户-删除', 'allow' => 15],
+            ['code' => 'site_account.view', 'name' => '公司入款帐户', 'allow' => 15],
+            ['code' => 'site_account.create', 'name' => '公司入款帐户-新增', 'allow' => 15],
+            ['code' => 'site_account.update', 'name' => '公司入款帐户-编辑', 'allow' => 15],
+            ['code' => 'site_account.delete', 'name' => '公司入款帐户-删除', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
