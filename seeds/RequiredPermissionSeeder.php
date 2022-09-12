@@ -119,6 +119,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'site_account.create', 'name' => '公司入款帐户-新增', 'allow' => 15],
             ['code' => 'site_account.update', 'name' => '公司入款帐户-编辑', 'allow' => 15],
             ['code' => 'site_account.delete', 'name' => '公司入款帐户-删除', 'allow' => 15],
+            ['code' => 'payment_rank.view', 'name' => '支付层级', 'allow' => 15],
+            ['code' => 'payment_rank.create', 'name' => '支付层级-新增', 'allow' => 15],
+            ['code' => 'payment_rank.update', 'name' => '支付层级-编辑', 'allow' => 15],
+            ['code' => 'payment_rank.delete', 'name' => '支付层级-删除', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
