@@ -134,6 +134,8 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'commodity.update', 'name' => '豆豆币商品管理-编辑', 'allow' => 15],
             ['code' => 'commodity.delete', 'name' => '豆豆币商品管理-删除', 'allow' => 15],
             ['code' => 'commodity_order.view', 'name' => '购买豆豆币纪录', 'allow' => 15],
+            ['code' => 'webmaster_cash_summary.view', 'name' => '现金报表', 'allow' => 15],
+            ['code' => 'webmaster_cash_summary.export', 'name' => '现金报表-汇出', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
