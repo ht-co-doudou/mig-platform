@@ -140,6 +140,9 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'homepage_setting.create', 'name' => '首页版面管理-新增', 'allow' => 15],
             ['code' => 'homepage_setting.update', 'name' => '首页版面管理-编辑', 'allow' => 15],
             ['code' => 'homepage_setting.delete', 'name' => '首页版面管理-删除', 'allow' => 15],
+            ['code' => 'cashflow_log.view', 'name' => '账变明细', 'allow' => 15],
+            ['code' => 'cashflow_log.create', 'name' => '账变明细-新增', 'allow' => 11],
+            ['code' => 'cashflow_log.export', 'name' => '账变明细-汇出', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
