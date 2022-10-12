@@ -143,6 +143,8 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'cashflow_log.view', 'name' => '账变明细', 'allow' => 15],
             ['code' => 'cashflow_log.create', 'name' => '账变明细-新增', 'allow' => 11],
             ['code' => 'cashflow_log.export', 'name' => '账变明细-汇出', 'allow' => 15],
+            ['code' => 'vendor_tx_order.view', 'name' => '额度转换报表', 'allow' => 15],
+            ['code' => 'vendor_tx_order.export', 'name' => '额度转换报表-汇出', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
