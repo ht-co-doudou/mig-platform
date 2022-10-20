@@ -19,7 +19,7 @@ class CreatePermissionGroupsTable extends AbstractMigration
         $table->addColumn('id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'identity' => true])
             ->addColumn('site_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping sites.id'])
             ->addColumn('name', 'string', ['limit' => 30, 'comment' => '名稱'])
-            ->addColumn('name_en', 'string', ['limit' => 30, 'comment' => '英文名稱'])
+            ->addColumn('name_en', 'string', ['limit' => 30, 'null' => true, 'comment' => '英文名稱'])
             ->addColumn('create_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'comment' => '建立時間'])
             ->addColumn('update_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'update' => 'CURRENT_TIMESTAMP', 'comment' => '更新時間'])
             ->save();
