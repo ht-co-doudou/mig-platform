@@ -145,10 +145,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'cashflow_log.export', 'name' => '账变明细-汇出', 'allow' => 15],
             ['code' => 'vendor_tx_order.view', 'name' => '额度转换报表', 'allow' => 15],
             ['code' => 'vendor_tx_order.export', 'name' => '额度转换报表-汇出', 'allow' => 15],
-            ['code' => 'permission_group.view', 'name' => '权限群组管理', 'allow' => 7],
-            ['code' => 'permission_group.create', 'name' => '权限群组管理-新增', 'allow' => 7],
-            ['code' => 'permission_group.update', 'name' => '权限群组管理-编辑', 'allow' => 7],
-            ['code' => 'permission_group.delete', 'name' => '权限群组管理-删除', 'allow' => 7],
+            ['code' => 'permission_group.view', 'name' => '权限群组管理', 'allow' => 11],
+            ['code' => 'permission_group.create', 'name' => '权限群组管理-新增', 'allow' => 11],
+            ['code' => 'permission_group.update', 'name' => '权限群组管理-编辑', 'allow' => 11],
+            ['code' => 'permission_group.delete', 'name' => '权限群组管理-删除', 'allow' => 11],
         ];
 
         $this->table('permissions')->insert($data)->save();
