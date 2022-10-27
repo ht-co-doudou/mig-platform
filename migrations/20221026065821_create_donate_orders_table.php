@@ -16,9 +16,9 @@ class CreateDonateOrdersTable extends AbstractMigration
             'comment' => '打賞創作者',
         ]);
 
-        $table->addColumn('id', 'integer', ['limit' => MysqlAdapter::INT_BIG, 'signed' => false, 'identity' => true])
+        $table->addColumn('id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'identity' => true])
             ->addColumn('payee_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping members.id'])
-            ->addColumn('withdrawer_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping creators.id'])
+            ->addColumn('withdrawer_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping members.id'])
             ->addColumn('site_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping sites.id'])
             ->addColumn('order_id', 'string', ['limit' => 50, 'comment' => '訂單 ID'])
             ->addColumn('diamond', 'decimal', ['precision' => 16, 'scale' => 4, 'default' => 0, 'comment' => '轉出豆豆幣'])
