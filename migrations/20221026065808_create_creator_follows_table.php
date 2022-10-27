@@ -3,9 +3,9 @@
 use Phinx\Db\Adapter\MysqlAdapter;
 use Phinx\Migration\AbstractMigration;
 
-class CreateMemberFollowsTable extends AbstractMigration
+class CreateCreatorFollowsTable extends AbstractMigration
 {
-    private $tableName = 'member_follows';
+    private $tableName = 'creator_follows';
 
     public function up()
     {
