@@ -3,9 +3,9 @@
 use Phinx\Db\Adapter\MysqlAdapter;
 use Phinx\Migration\AbstractMigration;
 
-class CreateDonateOrdersTable extends AbstractMigration
+class CreateCreatorDonateOrdersTable extends AbstractMigration
 {
-    private $tableName = 'donate_orders';
+    private $tableName = 'creator_donate_orders';
 
     public function up()
     {
