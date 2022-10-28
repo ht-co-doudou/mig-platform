@@ -17,13 +17,13 @@ class CreatePostReviewLogsTable extends AbstractMigration
         ]);
 
         $table->addColumn('id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'identity' => true])
-            ->addColumn('review_manager_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping members.id'])
+            ->addColumn('review_manager_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping managers.id'])
             ->addColumn('post_id', 'integer', ['limit' => MysqlAdapter::INT_REGULAR, 'signed' => false, 'comment' => 'mapping posts.id'])
             ->addColumn('status', 'integer', ['limit' => MysqlAdapter::INT_TINY, 'signed' => false, 'comment' => '審核狀態'])
             ->addColumn('create_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'comment' => '建立時間'])
             ->save();
 
-        $table->addForeignKey('review_manager_id', 'members', 'id', ['constraint' => "fk_{$this->tableName}_review_manager_id"])
+        $table->addForeignKey('review_manager_id', 'manager', 'id', ['constraint' => "fk_{$this->tableName}_review_manager_id"])
             ->addForeignKey('post_id', 'posts', 'id', ['constraint' => "fk_{$this->tableName}_post_id"])
             ->save();
     }
