@@ -23,7 +23,7 @@ class CreatePostReviewLogsTable extends AbstractMigration
             ->addColumn('create_at', 'timestamp', ['default' => 'CURRENT_TIMESTAMP', 'comment' => '建立時間'])
             ->save();
 
-        $table->addForeignKey('review_manager_id', 'manager', 'id', ['constraint' => "fk_{$this->tableName}_review_manager_id"])
+        $table->addForeignKey('review_manager_id', 'managers', 'id', ['constraint' => "fk_{$this->tableName}_review_manager_id"])
             ->addForeignKey('post_id', 'posts', 'id', ['constraint' => "fk_{$this->tableName}_post_id"])
             ->save();
     }
