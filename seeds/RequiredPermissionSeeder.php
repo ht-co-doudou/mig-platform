@@ -157,6 +157,10 @@ class RequiredPermissionSeeder extends AbstractSeed
             ['code' => 'member_quest_log.export', 'name' => '会员任务纪录-汇出', 'allow' => 15],
             ['code' => 'sign_in_quest.view', 'name' => '签到任务', 'allow' => 15],
             ['code' => 'sign_in_quest.update', 'name' => '签到任务-编辑', 'allow' => 15],
+            ['code' => 'creator.view', 'name' => '创作者频道管理', 'allow' => 15],
+            ['code' => 'creator.create', 'name' => '创作者频道管理-新增', 'allow' => 15],
+            ['code' => 'creator.update', 'name' => '创作者频道管理-编辑', 'allow' => 15],
+            ['code' => 'creator.delete', 'name' => '创作者频道管理-删除', 'allow' => 15],
         ];
 
         $this->table('permissions')->insert($data)->save();
